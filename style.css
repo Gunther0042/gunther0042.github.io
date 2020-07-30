@@ -3,6 +3,22 @@ body {
 	color: azure;
 	}
 
+h1 {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container > div {
+  text-align: center;
+  margin: 5px 10px;
+  flex-shrink: 1;
+}
+
 .button {
 	background-color: #262626;
 	border: 2px solid azure;
