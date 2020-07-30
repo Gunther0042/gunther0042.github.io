@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>NX Ban</title>
+<style>
+body {
+	background-color: darkslategray;
+	color: azure;
+	}
+	
+ /* unvisited link */
+a:link {
+  color: azure;
+}
+
+/* visited link */
+a:visited {
+  color: gainsboro;
+}
+
+/* mouse over link */
+a:hover {
+  color: cyan;
+}
+
+/* selected link */
+a:active {
+  color: white;
+} 
+</style>
+</head>
+
+<body>
+
+<center><h1>Switch Ban Essentials: Q&A</h1></center>
+<p>
+Bans are scary and Nintendo hasn’t been shy about banning hacked Switch consoles. However, educated hackers know that bans are avoidable and they know how to avoid them. The Q&A below should answer any questions you may have on how bans work and how to avoid getting your console banned.
+</p>
+<p>
+If you have any further questions after reading this page, you can ask them on the <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew Discord server</a>.
+</p>
+<h2>1. What is a ban and how does it happen?</h2>
+	<p>
+	Put simply, a ban is when Nintendo decides not to let a specific console or Nintendo account use its online services. Most bans associated with hacking are console bans, meaning that the specific console that Nintendo has banned will be unable to use Nintendo’s online services, including the eshop, game updates, and online play. Nintendo reserves the right to withhold these services per their <a href="https://accounts.nintendo.com/term/eula/US?lang=en-US" target="_blank">user agreement</a>.
+	</p>
+
+<h2>2. What does Nintendo ban consoles for?</h2>
+	<h4>The following actions will cause an immediate ban of your Nintendo Switch:</h4>
+	<ul>
+		<li>Piracy of any sort</li>
+		<li>Homebrew NSPs (installed to the home menu)</li>
+		<li>Changing user icon through Homebrew</li>
+		<li>Sketchy eShop behavior</li>
+	</ul>
+	<h4>The following actions will not result in an immediate ban, but will still result in a ban:</h4>
+	<ul>
+		<li>Modding online games</li>
+		<li>Cheating in online games</li>
+		<li>Clearing error logs after they’ve been uploaded to Nintendo (this may extend to using both emuMMC and sysMMC online, due to mismatched logs)</li>
+	</ul>
+	<h4>The following actions have not resulted in a ban (so far):</h4>
+	<ul>
+		<li>Atmosphere itself</li>
+		<li>Homebrew (via title takeover)</li>
+		<li>Custom themes</li>
+		<li>Custom sysmodules</li>
+		<li>Mods/cheating in offline games</li>
+		<li>Overclocking with sys-clk</li>
+		<li>EmuMMC</li>
+	</ul>
+	<p>
+	(Thanks to Discord user Val#8035 on the ReSwitched Discord server for this list)
+	</p>
+
+<h2>3. How does Nintendo know I did any of the things they ban for?</h2>
+	<p>
+	Nintendo filled the Switch with telemetry systems. Telemetry systems basically monitor what the user does on the console, including what games they install, what games they play, and a bunch of other data too. The Nintendo Switch stores this data constantly, even while offline, and will send these data logs to Nintendo as soon as it connects to the internet and Nintendo’s servers. This means that if a bannable action is performed on the Switch (even while offline) and the console connects to the internet at any point afterward, even briefly, Nintendo will receive the telemetry log and ban the console.
+	</p>
+
+<h2>4. How do I prevent getting banned?</h2>
+	<p>
+	There are essentially two ways to prevent getting banned. The first is to avoid performing any of the actions that Nintendo bans for on your Switch. The second is to keep your console permanently offline so that even if you take a bannable action, Nintendo will never be sent the telemetry log and will never find out about it.
+	</p>
+
+<h2>5.What is an emuNAND/emuMMC? Can it prevent me from getting banned?</h2>
+	<p>
+	NAND is simply a type of data storage that is used in a variety of electronic devices. eMMC is the type of NAND that is used in the Switch as its internal data storage. All of the Switch’s data is stored on its eMMC, which is an internal component of the Switch. This internal storage is sometimes referred to as the system NAND/eMMC or sysNAND/sysMMC. An emuNAND or emuMMC (emulated NAND or emulated eMMC) is a copy of the SysNAND stored on the SD card. 
+	</p>
+	<p>
+	Since the telemetry logs are stored in the Switch’s NAND, an emuNAND is useful because it allows you to have two copies of the Switch’s internal storage. Your sysNAND can be used for online play and eshop purchases while your emuNAND can be used for CFW and hacking and be kept permanently offline. This lets you have the best of both worlds! If you followed the recommended CFW setup on <a href="https://nh-server.github.io/switch-guide/" target="_blank">Nintendo Homebrew’s guide</a>, you should already have an emuNAND set up.
+	</p>
+
+<h2>6. So I can’t get banned if I use an emuNAND, right?</h2>
+	<p>
+	Wrong. 
+	</p>
+	<p>
+	An emuNAND is a tool to help prevent bans, it is not a magic bullet. You have to keep your emuNAND permanently offline or it won’t help you very much. It is also important to note that even though the internal storage of your sysNAND and emuNAND are separate, they are still copies of the same system with the same unique identifiers. If Nintendo bans your emuNAND then your sysNAND gets banned too and vice versa.
+	</p>
+
+<h2>7. But what if I want to use online homebrew tools like FTP or the Homebrew Store?</h2>
+	<p>
+	If you still want to use your internet connection on your always-offline console (or emuNAND), there is a way to do so. You just need to make sure that even though your console may be connected to the internet, it won’t be able to connect to Nintendo’s servers and therefore won’t be able to send the telemetry logs. 
+	</p>
+	<p>
+	The recommended way to do this is 90DNS, which are custom DNS servers that allow connection to the internet, but block Nintendo’s servers. You can find instructions on setting up 90DNS <a href="https://nh-server.github.io/switch-guide/extras/blocking_updates/" target="_blank">here</a>.
+	</p>
+
+<h2>8. What about Incognito Mode?</h2>
+	<p>
+	Incognito Mode is not recommended for a variety of reasons. It functions by blanking your console’s PRODINFO, which is console-unique data that your console requires to boot. If Incognito mode goes wrong, it can result in damage to your console, even an unrecoverable brick. Additionally, Incognito Mode is less reliable than 90DNS as it depends on Nintendo rejecting telemetry logs from consoles with blanked PRODINFO and while that is currently true, Nintendo may change this in the future. 
+	</p>
+	<p>
+	As of Atmosphere 0.12.0, a virtual PRODINFO blanking feature was included, which is safer than Incognito Mode, but still not a viable replacement for 90DNS.
+	</p>
+	<p>
+	(Thanks to Discord user noirscape#6666 on the Nintendo Homebrew Discord server for the explanation of why Incognito is bad)
+	</p>
+
+<h2>9. My console is banned. How can I unban it?</h2>
+	<p>
+	You can’t. Sorry.
+	</p>
+
+<h2>10. I performed a bannable action on my offline sysNAND but now I want to go online. What do I do?</h2>
+	<p>
+	Restore a “clean” NAND backup of the system from before you performed the bannable action. You can find instructions for doing that <a href="https://nh-server.github.io/switch-guide/extras/nandrestore/" target="_blank">here</a>. 
+	</p>
+	<p>
+	Using the Switch’s stock “factory format” feature does not erase telemetry logs and will not protect you from a ban.
+	</p>
+
+<h2>11. What if I lost my NAND backup or never made one?</h2>
+	<p>
+	You messed up. Make sure to make a NAND backup for the future. 
+	</p>
+	<p>
+	There is <a href="https://suchmememanyskill.github.io/guides/unbrick/#system-wipe">a method for manually resetting the NAND’s data</a>, but it is not as reliable as restoring a NAND backup and should not be your preferred option.
+	</p>
+
+<h2>12. So if I follow the advice here I’m guaranteed not to get banned?</h2>
+	<p>
+	Nothing in life is guaranteed. The information here is based on quite a lot of experience, but Nintendo can always decide to change what actions they consider bannable or add new ways of gathering telemetry. Part of hacking your console means accepting a little risk and taking responsibility for your decisions.
+	</p>
+	
+</body>
+	
+</html>
