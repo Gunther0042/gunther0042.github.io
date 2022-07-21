@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gunther.link/posts/email/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gunther.link/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gunther.link/posts/</loc>
+    <lastmod>2022-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gunther.link/posts/nxban/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://gunther.link/categories/</loc>
+  </url><url>
+    <loc>https://gunther.link/tags/</loc>
+  </url>
+</urlset>

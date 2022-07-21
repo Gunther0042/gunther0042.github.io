@@ -1,2 +1,3 @@
-# gunther0042.github.io
-Gunther's Github page. Very much a work in progress, but will eventually include a few random guides for console hacking and maybe other stuff too? I don't know.
+# Guides by Gunther
+
+A Hugo-generated site where I post some simple guides covering video game console hacking, digital privacy & security, or whatever else I happen to be interested in.
