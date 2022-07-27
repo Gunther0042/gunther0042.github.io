@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+
+    
+
+<html lang="en-us" data-theme="dark">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Tracking Opacity and the Cause of Consumer Indifference - Guides by Gunther</title>
+
+<meta name="description" content="People who care about privacy online are often frustrated by the inability of the masses, often including their friends and family, to see the importance of using privacy-preserving online services. But companies like Google and Facebook work very hard to make sure people reach the conclusion that online privacy simply isn&rsquo;t that important. The first and most obvious way they do this is by offering genuinely good services. Millions if not billions of dollars are used to develop Google&rsquo;s and Facebook&rsquo;s products to make them as seamless and user-friendly as possible.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://gunther.link/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://gunther.link/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://gunther.link/css/style.min.8ae46a41295e148d0bcce914795c26e3e5d1bed4c4e883eb30e82d224c152218.css" integrity="sha256-iuRqQSleFI0LzOkUeVwm4&#43;XRvtTE6IPrMOgtIkwVIhg=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://gunther.link/js/script.min.a65afe903825231554d9b55b073eb144da4ccf2d2823b216dcbc6cc656c9de76.js" type="text/javascript" charset="utf-8" integrity="sha256-plr&#43;kDglIxVU2bVbBz6xRNpMzy0oI7IW3LxsxlbJ3nY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="Tracking Opacity and the Cause of Consumer Indifference" />
+<meta property="og:description" content="People who care about privacy online are often frustrated by the inability of the masses, often including their friends and family, to see the importance of using privacy-preserving online services. But companies like Google and Facebook work very hard to make sure people reach the conclusion that online privacy simply isn&rsquo;t that important. The first and most obvious way they do this is by offering genuinely good services. Millions if not billions of dollars are used to develop Google&rsquo;s and Facebook&rsquo;s products to make them as seamless and user-friendly as possible." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gunther.link/posts/tracking_opacity/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-07-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-07-27T00:00:00+00:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tracking Opacity and the Cause of Consumer Indifference"/>
+<meta name="twitter:description" content="People who care about privacy online are often frustrated by the inability of the masses, often including their friends and family, to see the importance of using privacy-preserving online services. But companies like Google and Facebook work very hard to make sure people reach the conclusion that online privacy simply isn&rsquo;t that important. The first and most obvious way they do this is by offering genuinely good services. Millions if not billions of dollars are used to develop Google&rsquo;s and Facebook&rsquo;s products to make them as seamless and user-friendly as possible."/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">Guides by Gunther</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        <li>
+            <a href="mailto:gunther.mail@posteo.org" title="Email" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://fosstodon.org/@gunther" title="Mastodon" rel="me">
+                <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://github.com/Gunther0042" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="/index.xml" title="Rss" rel="me">
+                <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+</ul>
+</div>
+
+    <nav>
+        
+        
+        <a class="" href="https://gunther.link/about/" title="About">About</a>
+        
+        <a class="" href="https://gunther.link/contact/" title="Contact">Contact</a>
+        
+    </nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Tracking Opacity and the Cause of Consumer Indifference</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <p>People who care about privacy online are often frustrated by the inability of the masses, often including their friends and family, to see the importance of using privacy-preserving online services. But companies like Google and Facebook work very hard to make sure people reach the conclusion that online privacy simply isn&rsquo;t that important. The first and most obvious way they do this is by offering genuinely good services. Millions if not billions of dollars are used to develop Google&rsquo;s and Facebook&rsquo;s products to make them as seamless and user-friendly as possible. A FOSS, privacy-preserving alternative to Gmail for example, will often have trouble raising even a fraction of the funds available to Gmail to develop their product. While some dedicated and talented developers can make up for some of the lack of funding, even FOSS developers need to eat and they are competing against Google&rsquo;s engineers and developers, who are well-paid, well-organized, and well-funded. Meanwhile, Google funds its services from selling its users&rsquo; data, meaning it can offer these services to them at no (monetary) cost. The FOSS developer has to therefore find a way to fund their project without charging the user at risk of being even a less attractive alternative to Google. Sure, they can proudly claim that they don&rsquo;t sell user data, but to the average user, that&rsquo;s likely not enough of a reason to sacrifice features and usability and perhaps having to pay a fee to boot. Many privacy-preserving FOSS products and services overcome these challenges and manage to use innovative monetization to build a niche market for themselves, but these are relatively few and far-between and are constantly fighting an uphill battle in an attempt to compete with big tech.</p>
+<p>Big companies also rely heavily on the network effect. How can a FOSS, privacy-preserving messenger beat out WhatsApp or iMessage when choosing the alternative messaging service will mean being unable communicate with the vast majority of people who still use the mainstream services? The <a href="https://en.wikipedia.org/wiki/XMPP#Decentralization">decentralized nature of something like XMPP</a> is certainly more the exception than the rule when it comes to modern messengers and even an open-source, private messenger like Signal locks its users into using its servers to communicate. Google&rsquo;s integration into Android devices is another permutation of the same principle. Why should a user bother looking for a different cloud storage provider or local backup solution that they will then have to configure when Google Drive is already integrated with their Android device, no setup required?</p>
+<p>So convenience and price are clearly big motivators when it comes to why people ignore the privacy-invasive practices of big tech. But perhaps the most common reason people give is that they simply don&rsquo;t care. <a href="https://www.theguardian.com/technology/2010/jan/11/facebook-privacy">Mark Zuckerberg infamously said in 2010 that &ldquo;privacy is no longer a social norm.&rdquo;</a> And many people are quick to agree. &ldquo;I have nothing to hide.&rdquo; &ldquo;It&rsquo;s impossible to be private nowadays anyway.&rdquo; &ldquo;I don&rsquo;t really care if Google reads my search history.&rdquo; These are refrains familiar to anyone who has tried to convince their friends and family of the value of digital privacy.</p>
+<p>However, I would argue that most people do care about their privacy. Claiming they do not is only possible because of the siren song of convenient services that big tech offers and the ignorance of what digital privacy really means. One of the strongest weapons that Google and other surveillance companies have in their arsenal is tracking opacity, the opposite of transparency. My impression is that most people are aware that Google stores and sells their &ldquo;data,&rdquo; but very few people have a concrete idea of what that means. And that is just how Google likes it. It is very easy to use Google services and forget that they are observing everything you do. They don&rsquo;t announce it, it happens silently. Even when you open Google Maps and see a list of all of the locations you previously searched for, it is easy to see that information as only available to you. It is only available on your device after all, or only when logged into your account. Google never openly <em>claims</em> that this information is only available to you, but it works very hard to make you <em>feel</em> that way. In the early days of tech, almost all of our personal data was stored locally. This very much habituated us to the idea that only we had access to our data. In the decades since, almost everything has moved to the cloud, but our mindsets have not changed. The obvious differences between writing a digital diary on Microsoft Word in 1995 and on Google Docs in 2022 are the better features Google Drive provides and the convenience of being able to access the file on almost any device. The fact that in 2022 the data is stored on Google&rsquo;s servers where they are freely able to do what they wish with it doesn&rsquo;t come to mind. giving its users the illusion of data sovereignty is very much a deliberate design choice on Google&rsquo;s part.</p>
+<p>Tracking opacity generally manifests in two ways: (1) opacity of what data is collected and (2) opacity of how that data is used. Most people don&rsquo;t realize that their <a href="https://qz.com/1131515/google-collects-android-users-locations-even-when-location-services-are-disabled/">Android phones are nearly constantly sending their physical location to Google</a> because Google makes it very difficult to see that they are in fact doing that. Occasionally, Google or <a href="https://en.wikipedia.org/wiki/Lane_v._Facebook,_Inc.">Facebook will slip up and reveal to their users just how invasive their tracking is</a>, but at any hint of outcry, they will <a href="https://www.cnbc.com/2018/04/04/mark-zuckerberg-facebook-user-privacy-issues-my-mistake.html">claim it was a &ldquo;mistake&rdquo;</a> and make <a href="https://apnews.com/article/828aefab64d4411bac257a07c1af0ecb">superficial changes which make the tracking harder to see without actually getting rid of it</a>. Even if you do realize that your location data is being sent to Google, you have no idea what its being used for. Google and other companies make sure to have long terms of service agreements and privacy policies filled with legalese that most people will not have the time or energy to read and would not be able to understand even if they did. Even after reading and understanding these policies, the exact way Google uses to data is still incredibly vague. Phrases like &ldquo;improve services&rdquo; and &ldquo;shared with our partners&rdquo; are extremely general and tells the user almost nothing about what their data will actually be used for.</p>
+<p>Is it any wonder that so many people claim to not care about their privacy when companies like Google make it so hard to understand what data is being collected and how it&rsquo;s used? As long as this is unclear, people have plausible deniability. Paranoid, privacy-conscious people will assume Google is collecting all the data it can and using it for whatever purposes make it the most money, while less paranoid people won&rsquo;t pay the issue much mind at all. Google has specifically designed a system so that they don&rsquo;t have to.</p>
+<p>Unfortunately, I have no real solutions to offer here. The best solution would likely be some sort of privacy transparency law which would require companies to simply, clearly, and explicitly outline what data is collected and how it is used. This would be far better than the current system of dense and opaque privacy policies which are designed to be impossible to understand and impossible to opt out of. Given big tech&rsquo;s lobbying power, this is a far-fetched solution and would require real thought to implement properly in any event. Many FOSS projects do have simple and easy-to-read privacy policies, but perhaps some kind of standard short-hand for letting users know what data is collected and how it is used could be developed in the FOSS world? At the very least this could provide a template for any potential future data tracking transparency law to use. In the meantime though, we are stuck with using our best guess for how tech companies track us and use our data, which is just how they like it.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022/07/27</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://gunther.link/posts/tracking_opacity/">https://gunther.link/posts/tracking_opacity/</a>
+    <a href="https://gunther.link/" class="p-name p-author post-hidden-author h-card" rel="me">Gunther</a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Gunther, 2022, licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0</a><br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.<br>
+            
+            </p>
+        </div>
+
+        
+
+    
+
+
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark-without-switcher"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://gunther.link/ class="p-name u-url url fn" rel="me">Gunther</a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:gunther.mail@posteo.org">gunther.mail@posteo.org</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
