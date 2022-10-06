@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+
+    
+
+<html lang="en-us" data-theme="dark">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>GrapheneOS: User Impressions - Guides by Gunther</title>
+
+<meta name="description" content="When I first started focusing on moving toward more privacy-friendly software and services, I know that at some point I would want to install a custom OS on my phone. I&rsquo;ve always used Android as my mobile OS, and Android, being a Google product, is of course used to gather data on its users. While I was not as privacy-conscious when I bought my current phone a few years ago, by good fortune the model I purchased was a Google Pixel 3a, which is compatible with some top-tier custom OSes, including CalyxOS and GrapheneOS.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://gunther.link/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://gunther.link/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://gunther.link/css/style.min.8ae46a41295e148d0bcce914795c26e3e5d1bed4c4e883eb30e82d224c152218.css" integrity="sha256-iuRqQSleFI0LzOkUeVwm4&#43;XRvtTE6IPrMOgtIkwVIhg=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://gunther.link/js/script.min.a65afe903825231554d9b55b073eb144da4ccf2d2823b216dcbc6cc656c9de76.js" type="text/javascript" charset="utf-8" integrity="sha256-plr&#43;kDglIxVU2bVbBz6xRNpMzy0oI7IW3LxsxlbJ3nY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="GrapheneOS: User Impressions" />
+<meta property="og:description" content="When I first started focusing on moving toward more privacy-friendly software and services, I know that at some point I would want to install a custom OS on my phone. I&rsquo;ve always used Android as my mobile OS, and Android, being a Google product, is of course used to gather data on its users. While I was not as privacy-conscious when I bought my current phone a few years ago, by good fortune the model I purchased was a Google Pixel 3a, which is compatible with some top-tier custom OSes, including CalyxOS and GrapheneOS." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gunther.link/posts/grapheneos/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-06T10:00:00+00:00" />
+<meta property="article:modified_time" content="2022-10-06T10:00:00+00:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GrapheneOS: User Impressions"/>
+<meta name="twitter:description" content="When I first started focusing on moving toward more privacy-friendly software and services, I know that at some point I would want to install a custom OS on my phone. I&rsquo;ve always used Android as my mobile OS, and Android, being a Google product, is of course used to gather data on its users. While I was not as privacy-conscious when I bought my current phone a few years ago, by good fortune the model I purchased was a Google Pixel 3a, which is compatible with some top-tier custom OSes, including CalyxOS and GrapheneOS."/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">Guides by Gunther</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        <li>
+            <a href="mailto:gunther.mail@posteo.org" title="Email" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://fosstodon.org/@gunther" title="Mastodon" rel="me">
+                <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://github.com/Gunther0042" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="/index.xml" title="Rss" rel="me">
+                <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+</ul>
+</div>
+
+    <nav>
+        
+        
+        <a class="" href="https://gunther.link/about/" title="About">About</a>
+        
+        <a class="" href="https://gunther.link/contact/" title="Contact">Contact</a>
+        
+    </nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">GrapheneOS: User Impressions</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <p>When I first started focusing on moving toward more privacy-friendly software and services, I know that at some point I would want to install a custom OS on my phone. I&rsquo;ve always used Android as my mobile OS, and Android, being a Google product, is of course used to gather data on its users. While I was not as privacy-conscious when I bought my current phone a few years ago, by good fortune the model I purchased was a Google Pixel 3a, which is compatible with some top-tier custom OSes, including CalyxOS and GrapheneOS. The phone is getting somewhat old at this point (though it still runs pretty smoothly) and the Pixel 3a reaching end-of-life and no longer receiving software updates (including security updates) from Google was extra motivation for me to consider installing a custom OS. Even so, I was a bit nervous to install a new OS on the phone since doing so involves formatting the phone and entails a chance of bricking the device. I spent quite a while tinkering with various non-Google backup solutions for my phone so that I could import all my data to the formatted device without needing to rely on Google (<a href="https://syncthing.net/">Syncthing</a> was very useful for this). After I felt comfortable with my backups, I finally made the plunge and installed GrapheneOS on my device. I thought my experiences could potentially be useful to others who are considering a custom mobile OS and decided to write a post about it. This will not be a full review of GrapheneOS, but merely my impressions installing and using the software. I will be writing about GrapheneOS from the perspective of a layman/user, as I&rsquo;m not qualified to evaluate GrapheneOS from a technical standpoint.</p>
+<h3 id="choosing-the-os" >Choosing the OS
+<span>
+    <a href="#choosing-the-os">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>While there are quite a number of &ldquo;deGoogled&rdquo; and/or privacy-focused custom OSes that were available for my phone, the two that were most often recommended for Google Pixels were CalyxOS and GrapheneOS. Both are based on AOSP (Android Open-Source Project) and are focused on making Android a more privacy-friendly OS and limiting Google&rsquo;s control over the data stored on and generated from the device. Both also preserve <a href="https://source.android.com/docs/security/features/verifiedboot">Android&rsquo;s verified boot feature</a>, a security feature which is often not preserved in custom OSes.</p>
+<p>While I was leaning more toward CalyxOS at first, the more I researched, the more I felt that GrapheneOS was the better option. While CalyxOS does preserve the security features of stock Android well (unlike other custom AOSP-based OSes which do not), GrapheneOS not only preserves the security features in stock Android, but <a href="https://grapheneos.org/features#grapheneos">improves on them in a variety of ways</a>. Additonally, GrapheneOS has a better track record than CalyxOS of <a href="https://www.privacyguides.org/android/grapheneos-vs-calyxos/#update-frequency">merging upstream updates on time</a>, which is also important for device security.</p>
+<p>There were two factors that continued to pull me toward CalyxOS, however. The first was CalyxOS&rsquo; support for MicroG, which mimics Google Play Services (GPS) and allows many apps that rely on GPS to run on the phone even without GPS installed. While having a phone without GPS installed on it at all sounds nice in theory, in practice many of the apps I need day-to-day require GPS to function properly. However, somewhat recently GrapheneOS added support for sandboxed Google Play Services, which allows GPS to be installed on the phone while limiting its permissions and general access as compared to GPS on stock Android. MicroG and sandboxed GPS are two different models of attempting to limit Google&rsquo;s control over the device while preserving compatibility. MicroG is an open-source reimplementation of GPS, which spoofs stock GPS, requiring all the same elevated permissions that GPS does and communicating with Google&rsquo;s servers. Sandboxed GPS on the other hand, uses the standard, proprietary GPS software, but treats it as a user app and denies many of the elevated permissions that stock GPS and MicroG both require in order to work. Both solutions still send some information to Google and provide imperfect compatibility with apps that require GPS. Nevertheless, by all reports sandboxed GPS provides at least as much compatibility as MicroG and <a href="https://www.privacyguides.org/android/grapheneos-vs-calyxos/#sandboxed-google-play-vs-privileged-microg">seems to be a more secure implementation as well</a>.</p>
+<p>The second factor that pulled me toward CalyxOS was the drama surrounding GrapheneOS and its founder and lead developer, Daniel Micay. GrapheneOS started its life as CopperheadOS, but after a feud between Micay and James Donaldson, Copperhead&rsquo;s CEO, Micay left Copperhead and started GrapheneOS. Both Micay and Donaldson claim that they have the rights to the CopperheadOS source code and are <a href="https://en.wikipedia.org/wiki/CopperheadOS#License_change_and_departure_of_Daniel_Micay">currently in a legal dispute over these rights</a>. Given that Micay was clearly the technical brains behind CopperheadOS and the fact that <a href="https://mamushi.io/2021/04/12/departing-from-copperhead/">other of Donaldson&rsquo;s former business associates aren&rsquo;t very complimentary of him</a>, this dispute alone is not very concerning. However, Micay, and by extension the GrapheneOS project and community, have gotten in feuds with a number of other privacy-focused and FOSS projects. The list includes but is not limited to: <a href="https://youtu.be/Dx7CZ-2Bajg">Techlore</a>, <a href="https://twitter.com/DanielMicay/status/1512254304006119427">CalyxOS</a>, <a href="https://forum.f-droid.org/t/what-are-the-issues-fdroid-have-about-security/17520">F-Droid</a>, <a href="https://web.archive.org/web/20210613225002/https://sethsimmons.me/posts/community-drama-and-mobile-os/">Seth For Privacy</a>, and <a href="https://github.com/bromite/bromite/issues/2141">Bromite</a>.</p>
+<p>Now, is it possible that all of these projects are in cahoots against Micay and GrapheneOS and have organized misinformation and harassment campaigns against the project as Micay claims? I haven&rsquo;t seen any evidence of these campaigns myself, but sure, it&rsquo;s possible. Is it also possible and perhaps more likely that Micay is simply a little paranoid, maybe because of his bad experiences at Copperhead? Absolutely. However, while Micay has been somewhat acrimonious toward many of these projects, he seems genuine in believing that these other projects are looking to damage GrapheneOS and his behavior toward them generally seems to be better characterized as unprofessional rather than abusive. While that is still unfortunate, I don&rsquo;t think it&rsquo;s a good reason not to use and even support the GrapheneOS project, especially when many of the projects that GrapheneOS feuds with admit that GrapheneOS is an excellent OS and that Micay is a genius developer. It is still concerning that GrapheneOS has such poor relationships with other FOSS projects since the success and longevity of FOSS projects is often dependent on incorporating code from other projects. However, GrapehenOS has a whole team of talented developers and contributors, so perhaps they can continue making a successful product even without collaboration with other prominent FOSS projects. Ultimately, this drama, while somewhat concerning, did not seem like a good reason for me to choose an alternative custom OS over Graphene.</p>
+<h3 id="installation" >Installation
+<span>
+    <a href="#installation">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>While I have never installed a custom OS on my phone before, I do have some experience installing custom firmware on video game consoles and by comparison, installing GrapheneOS is an absolute breeze. I used the <a href="https://grapheneos.org/install/web">web installer</a> for the installation process and doing so was very straightforward. Once you have your phone connected to your PC, the process is basically just pressing a few buttons while the web installer does all the hard work for you. I did run into problems when trying to use UnGoogled Chromium as the browser for the install, but the good folks the GrapheneOS Matrix room informed me that while vanilla Chromium is compatible with the web installer, UnGoogled Chromium is not. I ended up using Brave for the install, which worked very well and I didn&rsquo;t hit any other snags in the installation process. Even if you have minimal technical expertise, using the web installer should be no problem.</p>
+<h3 id="ux" >UX
+<span>
+    <a href="#ux">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>After installing GrapheneOS, the setup experience was very similar to stock Android with the obvious exception of not needing a Google account. By default the UI is very bare, but this is by design. The only apps that are installed by default include reskinned versions of some basic AOSP apps (Phone, Contacts, Messages, Settings, etc.), Vanadium (GrapheneOS&rsquo; hardened version of Chromium), and GrapheneOS&rsquo; &ldquo;app store&rdquo;. I put &ldquo;app store&rdquo; in quotes since it is only used for GrapheneOS&rsquo; first-party apps, most of which are system apps which come preinstalled. The app store also includes sandboxed GPS, though I will discuss that more in-depth in a bit. The general UI of the phone is basically essential to stock Android and should be familiar for anyone who is used to the stock version of the OS. After adding some apps and a custom background, my phone with GrapheneOS looks mostly indistinguishable from when it was running stock Android.</p>
+<h3 id="sandboxed-google-play-services" >Sandboxed Google Play Services
+<span>
+    <a href="#sandboxed-google-play-services">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>While I could get some apps running on GrapheneOS as-is, the vast majority of apps require GPS to work properly. Installing sandboxed GPS from Graphene&rsquo;s app store is pretty simple and can be done in a few taps. While some basic GPS functionality can work without being logged in to a Google account, most apps will need the full GPS suite, which includes the Google Play Store and in order for the Play Store to function, you will need to log in to a Google account. You can of course make a &ldquo;throwaway&rdquo; account specifically for this purpose, though it would not surprise me if Google has ways of correlating accounts with each other, especially if you ever log in to your personal account on the same device. You can then use the Google Play Store to install apps, though you can of course also use F-Droid or Aurora Store. Once the full GPS suite was installed and I was logged into my Google account, I was really impressed with the app compatibility. I did struggle a little bit with some apps at first, but after some experimenting and tweaking, I have yet to encounter a single app that I couldn&rsquo;t get working with sandboxed GPS. This even includes some banking apps, which apparently don&rsquo;t always work well with sandboxed GPS. You can further limit GPS by installing it only in a specific user profile or a work profile, though I am currently just using it on the main user profile for the sake of convenience.</p>
+<h3 id="security-features" >Security Features
+<span>
+    <a href="#security-features">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Most of GrapheneOS&rsquo; security features are under the hood, but there are some that you will notice. First is the obvious lack of any proprietary Google apps on the phone by default, as I have already discussed. Second, is the expanded permissions capability. While stock Android allows you to control some permissions (such as camera or location access) for most apps, GrapheneOS allows you to control the sensors and network permissions as well. This network toggle in particular is a very powerful tool which can prevent any app you choose from connecting to the internet. This feature made me more comfortable installing some proprietary apps that I enjoy using but have no need for internet access. On stock Android, I have no choice but to allow them access anyway (and likely send data the app collects back to the developers) or else use an imperfect firewall solution like <a href="https://netguard.me/">Netguard</a>. GrapheneOS lets me deny these apps network access on the operating system level, which is a far more ideal solution.</p>
+<p>These permission toggles are available for Google Play Services as well, meaning you can decide exactly what permissions Google&rsquo;s apps have on your phone even if you do choose to install them, which is simply impossible on stock Android. While this lessens some of the seamless experience of stock Android (I often have to manually approve requests for access from GPS), the gain in privacy and security is definitely worth it. I can even install Google apps like GBoard on my phone and simply disallow them from using the internet, which they don&rsquo;t need anyway. I even denied the network permission to the Google Play Store (I either download my apps manually or get them from F-Droid or Aurora Store) and found that app compatibility still works just fine. While the basic GPS apps continue to have network access, I have still greatly limited the number of avenues Google has to siphon data from my phone, which feels really great!</p>
+<p>The other security feature you may notice is <a href="https://grapheneos.org/usage#exec-spawning">&ldquo;secure app spawning&rdquo;</a>, which will cause a slight delay when opening apps. This delay is noticeable, but still quite short and it didn&rsquo;t impact my usage of the phone at all. However, if you want to disable it, you can do so in the phone&rsquo;s security settings and apps will open without the delay.</p>
+<h3 id="conclusion" >Conclusion
+<span>
+    <a href="#conclusion">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Overall, I am quite happy with GrapheneOS. I did have to struggle a little bit with getting the sandboxed GPS to work as I like, but at this point all the apps I need run smoothly and I haven&rsquo;t had any compatibility issues. While GrapheneOS&rsquo; web installer is very easy to use, I still don&rsquo;t think I can recommend the OS to my non-tech savvy friends and family. A fair bit of setup and tinkering with sandboxed GPS was required for me to get it working smoothly and many of GrapheneOS&rsquo; best security features would likely go unused and/or unappreciated, while the usability sacrifices would still be noticeable. For me personally however, GrapheneOS is a great fit and when I get my next phone, installing GrapheneOS on it will likely be the first thing I do.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022/10/06</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://gunther.link/posts/grapheneos/">https://gunther.link/posts/grapheneos/</a>
+    <a href="https://gunther.link/" class="p-name p-author post-hidden-author h-card" rel="me">Gunther</a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Gunther, 2022, licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0</a><br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.<br>
+            
+            </p>
+        </div>
+
+        
+
+    
+
+
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark-without-switcher"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://gunther.link/ class="p-name u-url url fn" rel="me">Gunther</a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:gunther.mail@posteo.org">gunther.mail@posteo.org</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
