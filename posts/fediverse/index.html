@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+
+    
+
+<html lang="en-us" data-theme="dark">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Mastodon and the Fediverse: A Social Media Revolution - Guides by Gunther</title>
+
+<meta name="description" content="I discovered the Fediverse about a year ago and was blown away. &ldquo;The Fediverse&rdquo; is a network of federated social media platforms including Mastodon, Pleroma, Pixelfed, and others. I talked to people in my life about what a cool idea federated social media is and was disappointed when people seemed more confused than excited. For most of its existence, the Fediverse was virtually unknown compared to the more mainstream, centralized alternatives.">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://gunther.link/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://gunther.link/favicon.png">
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="https://gunther.link/css/style.min.8ae46a41295e148d0bcce914795c26e3e5d1bed4c4e883eb30e82d224c152218.css" integrity="sha256-iuRqQSleFI0LzOkUeVwm4&#43;XRvtTE6IPrMOgtIkwVIhg=">
+    
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="https://gunther.link/js/script.min.a65afe903825231554d9b55b073eb144da4ccf2d2823b216dcbc6cc656c9de76.js" type="text/javascript" charset="utf-8" integrity="sha256-plr&#43;kDglIxVU2bVbBz6xRNpMzy0oI7IW3LxsxlbJ3nY="></script>
+    
+
+
+
+
+
+
+
+<meta property="og:title" content="Mastodon and the Fediverse: A Social Media Revolution" />
+<meta property="og:description" content="I discovered the Fediverse about a year ago and was blown away. &ldquo;The Fediverse&rdquo; is a network of federated social media platforms including Mastodon, Pleroma, Pixelfed, and others. I talked to people in my life about what a cool idea federated social media is and was disappointed when people seemed more confused than excited. For most of its existence, the Fediverse was virtually unknown compared to the more mainstream, centralized alternatives." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gunther.link/posts/fediverse/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-19T19:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-19T19:00:00+00:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mastodon and the Fediverse: A Social Media Revolution"/>
+<meta name="twitter:description" content="I discovered the Fediverse about a year ago and was blown away. &ldquo;The Fediverse&rdquo; is a network of federated social media platforms including Mastodon, Pleroma, Pixelfed, and others. I talked to people in my life about what a cool idea federated social media is and was disappointed when people seemed more confused than excited. For most of its existence, the Fediverse was virtually unknown compared to the more mainstream, centralized alternatives."/>
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header class="common-header"> 
+            
+                <div class="header-top">
+    <h1 class="site-title">
+    <a href="/">Guides by Gunther</a>
+</h1>
+    <ul class="social-icons">
+
+
+    
+        <li>
+            <a href="mailto:gunther.mail@posteo.org" title="Email" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://fosstodon.org/@gunther" title="Mastodon" rel="me">
+                <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://github.com/Gunther0042" title="Github" rel="me">
+            <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="/index.xml" title="Rss" rel="me">
+                <span class="inline-svg" >
+
+
+
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"/></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+</ul>
+</div>
+
+    <nav>
+        
+        
+        <a class="" href="https://gunther.link/about/" title="About">About</a>
+        
+        <a class="" href="https://gunther.link/contact/" title="Contact">Contact</a>
+        
+    </nav>
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">Mastodon and the Fediverse: A Social Media Revolution</h1>
+
+                
+            </header>
+        </div>
+        <div class="content e-content">
+            <p>I discovered the Fediverse about a year ago and was blown away. &ldquo;The Fediverse&rdquo; is a network of federated social media platforms including Mastodon, Pleroma, Pixelfed, and others. I talked to people in my life about what a cool idea federated social media is and was disappointed when people seemed more confused than excited. For most of its existence, the Fediverse was virtually unknown compared to the more mainstream, centralized alternatives. Recently however, a certain Twitter CEO&rsquo;s determination to burn the social media platform he bought to the ground has led one of the platforms on the Fediverse, Mastodon, to rise dramatically in popularity. Mastodon&rsquo;s rise is very well-deserved and I want to take advantage of Mastodon&rsquo;s moment in the sun to explore what about Mastodon, and the Fediverse more broadly, excites me so much. I also plan to confront some of the obstacles the Fediverse faces on the road to being a true replacement, both technologically and culturally, for centralized social media.</p>
+<h3 id="the-current-social-media-hellscape" >The Current Social Media Hellscape
+<span>
+    <a href="#the-current-social-media-hellscape">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>In order to understand the potential that the Fediverse has, we have to understand the current state of social media. Luckily (or unluckily), pretty much everyone with an internet connection is already familiar with our current social media hellscape, so I should only need to cover the basics briefly. Social media as we know it is addictive, dominated by ads and &ldquo;promoted posts&rdquo;, tracks its users so it can target ads to them, sells that data so others can do the same, censors benign content while promoting the most outrageous misinformation and hate speech, dictates what we see based on an unknowable algorithm, and much more, all to feed the social media companies&rsquo; bottom lines. Despite how crazy that list sounds, I don&rsquo;t think I know anyone who would say it isn&rsquo;t true. Yet, when confronted with the question of why we continue to use such toxic platforms, we all (myself included) have our answers. Whether its for our jobs, buying and selling goods, keeping up with the news, or even staying in touch with friends and family, the vast majority of people get enough utility from social media (or at least think they do) that they are willing to put up with the immense amount of garbage that inevitably comes with it. Like victims in an abusive relationship, we stay on these social media sites despite all the harm we admit they cause us, perhaps hoping things will improve, or just because we can&rsquo;t imagine ourselves living any other way. But what if there was a way to keep the benefits social media provides while getting rid of some, if not most, of the toxicity we have come to associate with it? This is the promise that the Fediverse offers.</p>
+<h3 id="federation-and-why-it-is-good" >Federation and Why it is Good
+<span>
+    <a href="#federation-and-why-it-is-good">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Federation as a communications technology concept is not new. Email uses it, telephones use it, old chat protocols like IRC and XMPP use it, as well as newer chat protocols like Matrix. Federated communications is really just the ability to communicate with someone else even if you have different communication providers. Gmail users can send emails to ProtonMail users, Verizon phones can talk with AT&amp;T phones, etc. That&rsquo;s all there is to it. Nevertheless, we are so used to social media being closed platforms controlled by a single, for-profit company, that the idea of federated social media is still mystifying to many of us.</p>
+<p>Despite this, social media stands to gain so much from federation, which is a potential solution for many of the obvious problems that the the mainstream social media platforms struggle with. Social media moderation is an absolute nightmare on centralized platforms because you need to come up with a single set of rules that can be applied universally to users of different nationalities, ages, political beliefs, and cultural assumptions. Such a task is nearly impossible and usually ends in some users feeling that the platform is overmoderated, others feeling its undermoderated, and no one being happy. Most users either grumble and continue to use the platform despite its shortcomings or move to alternate platforms with minimal moderation, which often end up being cesspits and breeding grounds for radical ideologies.</p>
+<p>Enter federation. By making a federated social media platform, each user can join an instance of their chosen social media platform (e.g. Mastodon) based on the type of moderation policy that instance has. This allows all users to join a platform with a moderation policy they agree with while not depriving them of the ability to speak to people who feel differently. Moderators can moderate as they like on their instance, and defederate with instances who they feel are beyond the pale. On the surface, this seems to return us to the exact same situation of different users being siloed into different platforms, but a closer look reveals this is not the case. On centralized platforms, you are either allowed or disallowed to participate on the platform, but federation allows for many more shades of gray. To take a (simplified and fictitious) political example, a far-left Mastodon instance might defederate from any instance that does not have leftist politics, a moderate left-leaning instance will defederate from far-right instances but remain federated with moderate right instances, while a centrist instance will remain federated with all instances. Now instead of a binary choice of users being either &ldquo;on&rdquo; or &ldquo;off&rdquo; the platform, there is a gradient of what type of instances are available and what type of interactions you will have based on the type of instance you choose to join. And the reality is even more nuanced, since instance moderators have a variety of different options at their disposal for how to federate with other instances besides &ldquo;yes&rdquo; or &ldquo;no&rdquo; and individual users also have the ability to mute or block entire instances on their own. And if the user decides they no longer like their instance, migrating to a new instance while keeping all of your followers can be done in just a few minutes.</p>
+<p>Federation has other benefits too. Instead of being thrown into the sea of social media with millions of other users, federation allows users to start with a &ldquo;home base.&rdquo; It makes the task of creating community on social media so much easier. To be sure, other platforms have this as well. Servers on Discord, subreddits on Reddit, and even groups on Facebook can also provide this communal feeling. However, only the Fediverse holds the promise of each user choosing who moderates their entire instance, as well as who is in charge of protecting the data they generate while using the platform and determining how it is used. That is a choice that no one on Discord or Reddit gets to make. In addition, only the Fediverse offers to possibility of different platforms being able to communicate with one another. You can follow a Pleroma or Pixelfed account with your Mastodon account easily, try following a Facebook account on Twitter and you&rsquo;ll have a much harder time.</p>
+<h3 id="open-source-and-non-profit" >Open Source and Non-Profit
+<span>
+    <a href="#open-source-and-non-profit">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Another benefit of the Fediverse is that all of its platforms are open source and non-profit. Open source means that anyone can view and fork the source code for any of the platforms on the Fediverse. You have an idea for a Mastodon feature that the developers refuse to add? Fork the source code and add the feature yourself. The AcitivityPub protocol which powers the Fediverse will ensure that you can still communicate with instances using the &ldquo;official&rdquo; fork. There&rsquo;s simply no way to do that with centralized social media. The Fediverse&rsquo;s platforms&rsquo; non-profit nature also makes them markedly different from mainstream platforms. No ads? No promoted posts? No algorithm determining which posts you can see? All of this makes perfect sense if the platform isn&rsquo;t trying to squeeze every cent it can out of its users. This is likely the same reason why Mastodon has other excellent features that Twitter lacks, like the ability to automatically delete old posts or the ability to follow hashtags.</p>
+<h3 id="isnt-it-complicated" >Isn&rsquo;t it Complicated?
+<span>
+    <a href="#isnt-it-complicated">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>If you&rsquo;ve managed to read this far into this post, you likely have at least somewhat of an idea of how Mastodon and the Fediverse work. And yet, so many people who are interested in trying Mastodon insist that it is too hard to understand. For those who are technically knowledgeable and understand how the internet functions, the idea of federation is very intuitive. But for the vast majority of internet users, understanding how email works well enough to use it does not translate to the ability to map that understanding onto an entirely different context like social media. For most, understanding Mastodon is not intuitive and requires a real learning curve. That being said, the internet as a whole (including centralized social media platforms) required a learning curve for almost all of us. We&rsquo;ve lived with centralized social media for well over a decade now and have gotten used to how it functions, departures from that norm seem strange and confusing. But for those willing to put in a bit of effort into opening a new door, there&rsquo;s a real treasure waiting for them on the other side. Hopefully, the problems of centralized social media becoming more and more blatant will motivate more people to open that door. Understanding how Mastodon works can be a bit confusing, but once you actually start using it, you&rsquo;ll likely find that it is far more intuitive than you think.</p>
+<h3 id="federation-cant-completely-kill-toxicity" >Federation Can&rsquo;t Completely Kill Toxicity
+<span>
+    <a href="#federation-cant-completely-kill-toxicity">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>Mastodon is a much less toxic place than Twitter. The benefits of federation I outlined above as well as very deliberate design choices (like lack of a quote Tweet analogue) make it that way. But you&rsquo;ll <a href="https://drewdevault.com/2022/07/09/Fediverse-toxicity.html">still encounter toxicity there</a>. Perhaps it&rsquo;s just a part of how people are, perhaps its the feeling of anonymity that the internet provides, but a certain amount of toxicity seems baked into social media. Anyone expecting the Fediverse to completely kill social media toxicity might be waiting a while, I&rsquo;m afraid.</p>
+<h3 id="what-about-the-money" >What About the Money?
+<span>
+    <a href="#what-about-the-money">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>The lack of a for-profit company behind Mastodon and the Fediverse means a lack of, well&hellip; profit. Mastodon depends on the largess its volunteer developers and/or donors. Despite this, Mastodon is an excellent and professional-looking piece of software; it really is impressive. But not all Fediverse platforms can say the same. Many are quite janky compared to the relatively polished feel of their mainstream competitors and even Mastodon has some rough edges when compared to Twitter. It&rsquo;s hard to compete with companies that have millions if not billions of dollars at their disposal. The question of how to fund development is an open one in the FOSS community and I&rsquo;m not going to solve it here. My impression is that Mastodon&rsquo;s new influx of user have been quite generous in financially supporting their instances and I hope that will continue. But centralized social media platforms offering us their services for &ldquo;free&rdquo; all these years have made most of us reluctant to part with even a small amount of money in exchange for a similar service. Hopefully, smart people will come up with a business model for the Fediverse that doesn&rsquo;t compromise on its values moving forward, but in the meantime I can only encourage those who enjoy the Fediverse to donate to their instances!</p>
+<h3 id="lack-of-originality" >Lack of Originality
+<span>
+    <a href="#lack-of-originality">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>While the Fediverse solves many problems with centralized social media, it has yet to introduce a platform that is truly <em>original</em> beyond the innovation of federation. Mastodon is essentially Twitter plus federation, Pixelfed is Instagram, Lemmy is Reddit, Friendica is Facebook, etc. This isn&rsquo;t to say that these platforms don&rsquo;t feel substantially different from their centralized counterparts, they do, but for the Fediverse to truly succeed, creative thinkers will have to think of new social media ideas that synergize with federation and aren&rsquo;t just derivatives of already extant platforms with federation added on top. Despite being heavily based off of Twitter, Mastodon works very well with federation, while other platforms, like Lemmy, benefit from federation, but not to the same extent. I&rsquo;m excited to see the first truly original social media concept on the Fediverse and the even greater growth the Fediverse can achieve once that happens.</p>
+<h3 id="try-it-for-yourself" >Try it for Yourself
+<span>
+    <a href="#try-it-for-yourself">
+        <svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/></svg>
+    </a>
+</span>
+</h3><p>I hope I&rsquo;ve been able to convey some of the excitement I have for the Fediverse while still being able to give an honest assessment of the shortcomings and where I think there&rsquo;s room to improve. If you&rsquo;re not already on the Fediverse, I urge you to give it a try. I really think you&rsquo;ll like it! <a href="https://joinmastodon.org/">joinmastodon.org</a> is a great place to start.</p>
+
+        </div>
+        
+
+    
+
+
+<div class="post-info">
+    
+        <div class="post-date dt-published">2022/12/19</div>
+    
+
+    <a class="post-hidden-url u-url" href="https://gunther.link/posts/fediverse/">https://gunther.link/posts/fediverse/</a>
+    <a href="https://gunther.link/" class="p-name p-author post-hidden-author h-card" rel="me">Gunther</a>
+
+
+    <div class="post-taxonomies">
+        
+            
+    </div>
+</div>
+
+    </article>
+
+    
+
+    
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        </main>
+        
+            <footer class="common-footer">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+        <div class="copyright">
+            <p>© Gunther, 2022, licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0</a><br>
+            Powered by <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, theme <a target="_blank" rel="noopener noreferrer" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.<br>
+            
+            </p>
+        </div>
+
+        
+
+    
+
+
+
+
+<script>
+const STORAGE_KEY = 'user-color-scheme'
+const defaultTheme = "dark-without-switcher"
+
+let currentTheme
+let switchButton
+let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+const autoChangeScheme = e => {
+    currentTheme = e.matches ? 'dark' : 'light'
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    changeButtonText()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchButton = document.querySelector('.theme-switcher')
+    currentTheme = detectCurrentScheme()
+    if (currentTheme == 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+    if (currentTheme == 'auto') {
+        autoChangeScheme(autoDefinedScheme);
+        autoDefinedScheme.addListener(autoChangeScheme);
+    }
+
+    if (switchButton) {
+        changeButtonText()
+        switchButton.addEventListener('click', switchTheme, false)
+    }
+  
+    showContent()
+})
+
+function detectCurrentScheme() {
+    if (localStorage.getItem(STORAGE_KEY)) {
+        return localStorage.getItem(STORAGE_KEY)
+    } 
+    if (defaultTheme) {
+        return defaultTheme
+    } 
+    if (!window.matchMedia) {
+        return 'light'
+    } 
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark'
+    }
+    return 'light'
+}
+
+function changeButtonText()
+{   
+    if (switchButton) {
+        switchButton.textContent = currentTheme == 'dark' ?  "Light theme" : "Dark theme"
+    }
+}
+
+function switchTheme(e) {
+    if (currentTheme == 'dark') {
+        localStorage.setItem(STORAGE_KEY, 'light')
+        document.documentElement.setAttribute('data-theme', 'light')
+        currentTheme = 'light'
+    } else {
+        localStorage.setItem(STORAGE_KEY, 'dark')
+        document.documentElement.setAttribute('data-theme', 'dark')
+        currentTheme = 'dark'
+    }
+    changeButtonText()
+}
+
+function showContent() {
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = 1;
+}
+</script>
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://gunther.link/ class="p-name u-url url fn" rel="me">Gunther</a> 
+
+     
+        /
+        <a class="p-email u-email email" rel="me" href="mailto:gunther.mail@posteo.org">gunther.mail@posteo.org</a>
+    
+
+    
+</p> 
+</footer>
+
+        
+    </div>
+</body>
+</html>
